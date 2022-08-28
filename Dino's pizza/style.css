@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "spartan";
+  /* width: 100%; */
+  font-weight: 250;
+  font-family: 'League Spartan', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #f5f4f4;
+}
+
+/* header {
+  width: 100%;
+}
+
+.line-header {
+  background-color: #f43103;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fdfafa;
+}
+
+.line-header h1 {
+  font-family: "Lobster";
+  font-size: 150%;
+  margin: 0.5em;
+}
+
+.singup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+.singup a {
+  color: #f5f4f4;
+  text-decoration: none;
+}
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart img{
+  width:65%
+} */
+
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f43103;
+  color: #f5f4f4;
+
+}
+
+header h1{
+  font-size: 1.5vw;
+  font-family: "Lobster";
+}
+
+header .top-line{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+.top-line h3{
+  font-size: 1vw;
+  margin: 0;
+  padding: 1% 0;
+}
+
+.top-line img{
+  width: 40%;}
+
+.cart{
+ display: flex;
+ align-items: center;
+
+  }
+
+  .top-line .cart_count  {
+    text-align: center;
+    width: 6vw;
+    background-color: #fdfafa;
+    color: #f43103;
+    border-radius: 50%;}
+
+
+/* .top-line .cart_count  {
+  background-color: #fdfafa;
+  color: #f43103;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.img img {
+  width: 100%;
+}
+
+.img .text {
+  position: absolute;
+  top: 45%;
+  color: #fdfafa;
+  margin-left: 5%;
+  font-weight: 15;
+}
+
+.img .text h1 {
+  font-family: "Lobster";
+  font-weight: 160;
+  font-size: 8vw;
+}
+
+.about {
+  background-color: #f43103;
+  color: #fdfafa;
+  text-align: center;
+  padding: 2%;
+  font-family: "Spartan";
+}
+.about h1 {
+  font-size: 140%;
+  font-weight: 300;
+  padding: 2%;
+  margin: 0;
+}
+.menu {
+  display: flex;
+  margin: 4% 20%;
+  width: 60%;
+  align-items: center;
+}
+.menu hr {
+  width: 35%;
+  border-top: 1px solid red;
+  margin: 1rem;
+  opacity: 1;
+}
+
+.menu h2 {
+  font-size: 2em;
+  color: #f43103;
+  white-space: nowrap;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.product-title {
+  width: 27%;
+  background-color: #f5f4f4;
+  margin: 2%;
+  box-shadow: 5px 10px 15px #d5b5b5;
+  width: 29%;
+  background-color: #f5f4f4;
+  color: #f43103;
+  border-radius: 2%;
+}
+.product-title img {
+  width: 100%;
+}
+
+
+.product-title h2, .product-title p, .product-title .price-add {
+    padding: 0px 11px 5px;
+}
+.product-title h2 {
+  white-space: nowrap;
+  font-size: 2.6vw;
+}
+
+.price-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-add .price {
+  margin: 0;
+  height: auto;
+}
+
+.product-title p {
+  height: 70px;
+}
+.add-cart {
+  color: #f5f4f4;
+  background-color: #f43103;
+}
+
+.price-add button {
+  font-size: 1.3vw;
+  padding: 1% 4%;
+  color: #fdfafa;
+  background-color: #f43103;
+  border: 0;
+  border-radius: 4px;
+}
+
+footer {
+  display: flex;
+  background-color: #f44336;
+  justify-content: end;
+  color: #f5f4f4;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+footer .total {
+  display: flex;
+  justify-content: space-around;
+  width: 68%;
+  align-items: center;
+}
+
+footer .total button {
+  font-size: 1.5vw;
+  color: #f43103;
+  font-family: "spartan";
+  padding: 1.5% 6%;
+  border: none;
+  background-color: #f5f4f4;
+  border-radius: 5px;
+}
+
+
+/* Ored Page */
+
+.menu.order h2{
+  font-weight: 600;
+  font-size: 4.5vw;
+  text-align: left;
+  font-family: 'League Spartan', sans-serif;
+}
+.menu.order .product-title p{
+    height: 85px;
+}
+
+.products.order {
+    justify-content: left;
+}
+.products.order .product-title{
+    width: 20%;
+    
+}
+.products.order .product-title h2{
+    font-size: 2vw;
+}
+/* Singin page */
+
+#signin .gradient {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background-color: black;
+    opacity: 50%;
+    width: 100%
+
+}
+
+#signin{
+    overflow: hidden;
+    height: 100vh;
+
+}
+
+@media screen and (max-width:450px){
+ .cart_count{
+
+ } 
+  
+}
+

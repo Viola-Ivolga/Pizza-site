@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "spartan";
-  /* width: 100%; */
   font-weight: 250;
   font-family: 'League Spartan', sans-serif;
 }
@@ -10,43 +9,6 @@ a {
   text-decoration: none;
   color: #f5f4f4;
 }
-
-/* header {
-  width: 100%;
-}
-
-.line-header {
-  background-color: #f43103;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fdfafa;
-}
-
-.line-header h1 {
-  font-family: "Lobster";
-  font-size: 150%;
-  margin: 0.5em;
-}
-
-.singup {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 20%;
-}
-.singup a {
-  color: #f5f4f4;
-  text-decoration: none;
-}
-.cart {
-  display: flex;
-  align-items: center;
-}
-
-.cart img{
-  width:65%
-} */
 
 
 header{
@@ -60,28 +22,34 @@ header{
 }
 
 header h1{
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-family: "Lobster";
+  margin: 0;
+  text-align: center;
+  padding: 0 1vw;
+
 }
 
 header .top-line{
-  width: 40%;
+  width: 15%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
+  padding: .5vw;
 }
 
 
-
-
-.top-line h3{
-  font-size: 1vw;
-  margin: 0;
-  padding: 1% 0;
+.top-line a {
+  color: #f5f4f4;
+  text-decoration: none;
+  font-size: 2vw;
 }
 
 .top-line img{
-  width: 40%;}
+  width: 3.5vw;
+  padding: 0.5vw;
+}
 
 .cart{
  display: flex;
@@ -90,23 +58,15 @@ header .top-line{
   }
 
   .top-line .cart_count  {
-    text-align: center;
-    width: 6vw;
-    background-color: #fdfafa;
+    display: grid;
+    place-items:center;
+    width: 2.5vw;
+    height: 2.5vw;
+    background-color:#f5f4f4;
     color: #f43103;
-    border-radius: 50%;}
-
-
-/* .top-line .cart_count  {
-  background-color: #fdfafa;
-  color: #f43103;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+    border-radius: 50%;
+  font-size: 1.5vw;
+}
 
 .img img {
   width: 100%;
@@ -114,8 +74,8 @@ header .top-line{
 
 .img .text {
   position: absolute;
-  top: 45%;
-  color: #fdfafa;
+  top: 20vw;
+  color: #f5f4f4;
   margin-left: 5%;
   font-weight: 15;
 }
@@ -125,10 +85,16 @@ header .top-line{
   font-weight: 160;
   font-size: 8vw;
 }
+.img .text h3{
+    font-size: 4vw;
+    margin: 0;
+    font-family: 'spartan';
+    font-weight: 300;
+}
 
 .about {
   background-color: #f43103;
-  color: #fdfafa;
+  color: #f5f4f4;
   text-align: center;
   padding: 2%;
   font-family: "Spartan";
@@ -141,21 +107,23 @@ header .top-line{
 }
 .menu {
   display: flex;
-  margin: 4% 20%;
-  width: 60%;
+  width: 100%;
+  justify-content: center;
   align-items: center;
 }
 .menu hr {
   width: 35%;
-  border-top: 1px solid red;
+  border-top: 1px solid #f43103;
   margin: 1rem;
   opacity: 1;
+  padding: 0;
 }
 
 .menu h2 {
-  font-size: 2em;
+  font-size: 1em;
   color: #f43103;
   white-space: nowrap;
+  font-weight: 200;
 }
 
 .products {
@@ -163,10 +131,11 @@ header .top-line{
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  padding-bottom: 8px;
 }
 
 .product-title {
-  width: 27%;
+
   background-color: #f5f4f4;
   margin: 2%;
   box-shadow: 5px 10px 15px #d5b5b5;
@@ -179,13 +148,19 @@ header .top-line{
   width: 100%;
 }
 
+.product-title p {
+  height: 70px;
+}
+
 
 .product-title h2, .product-title p, .product-title .price-add {
     padding: 0px 11px 5px;
 }
+
 .product-title h2 {
   white-space: nowrap;
   font-size: 2.6vw;
+  padding: 0.5vw
 }
 
 .price-add {
@@ -196,10 +171,12 @@ header .top-line{
 .price-add .price {
   margin: 0;
   height: auto;
+  padding: 0;
+  font-size: 2vw;
 }
 
 .product-title p {
-  height: 70px;
+  font-size: 1.5vw;
 }
 .add-cart {
   color: #f5f4f4;
@@ -208,16 +185,16 @@ header .top-line{
 
 .price-add button {
   font-size: 1.3vw;
-  padding: 1% 4%;
-  color: #fdfafa;
+  padding: 1vw 2vw;
+  color: #f5f4f4;
   background-color: #f43103;
   border: 0;
-  border-radius: 4px;
+  border-radius: .5vw;
 }
 
 footer {
   display: flex;
-  background-color: #f44336;
+  background-color: #f43103;
   justify-content: end;
   color: #f5f4f4;
   align-items: center;
@@ -234,17 +211,20 @@ footer .total {
 }
 
 footer .total button {
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: #f43103;
   font-family: "spartan";
-  padding: 1.5% 6%;
+  padding: 2vw 4vw;
   border: none;
   background-color: #f5f4f4;
   border-radius: 5px;
 }
 
+footer .total h2{
+  font-size: 3vw;
+}
 
-/* Ored Page */
+/* Order Page */
 
 .menu.order h2{
   font-weight: 600;
@@ -261,6 +241,9 @@ footer .total button {
 }
 .products.order .product-title{
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     
 }
 .products.order .product-title h2{
@@ -268,26 +251,248 @@ footer .total button {
 }
 /* Singin page */
 
-#signin .gradient {
+/* #signin .gradient {
     position: absolute;
     top: 0;
     height: 100vh;
     background-color: black;
     opacity: 50%;
-    width: 100%
+    width: 100% */
 
+
+#signin .container{
+  position: absolute;
+  color:#f43103;
+  background-color:rgb(0 0 0 / 64%);
+  top: 0;
+  width: 100%;
 }
 
+
 #signin{
-    overflow: hidden;
     height: 100vh;
 
 }
 
-@media screen and (max-width:450px){
- .cart_count{
+.container form{
+  background-color: #f5f4f4;
+    width: 30vw;
+    margin: 7% 30%;
+    height: 44vw;
+    padding: 2vw;
+    border-radius: 5px;
 
- } 
-  
 }
 
+.container form h1{
+  font-family: 'lobster';
+  font-size: 3vw;
+  padding-top: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.container form h3{
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-top: 1vw;
+  text-align: center;
+}
+
+.container input{
+  font-size: 1.5vw;
+  padding: 0.5vw;
+  width: 90%;
+  margin-bottom: 2vw;
+  border: 1px solid #f43103;
+  height: 2vw;
+  border-radius: 5px;
+  
+}
+@media screen and (max-width: 375px) {
+  .container input {
+    margin-bottom: 0;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .container form h1 {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 414px) {
+  .container form {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .container form h1 {
+    padding-top: 0;
+  }
+     
+}
+
+
+::placeholder{
+  color:#f43103
+}
+.container label{
+  font-size: 2vw;
+
+}
+
+.container button{
+  background-color: #f43103;
+  color: #f5f4f4;
+  padding: 7px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 2vw;
+  width: 12vw;
+}
+@media screen and (max-width: 280px) {
+  .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
+  }
+  .container form h1 {
+    padding-top: 0;
+  }
+  .container button {
+    padding: 4px;
+    margin-top: 5px;
+    border-radius: 2px;
+  }
+     
+}
+
+
+/********* delivery *******/
+ .delivery-body{
+  align-items: center;
+ }
+ .delivery-details{
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f43103;
+ }
+
+ .delivery-details table {
+  width: 50%;
+  border-collapse: collapse;
+  height: 30vw;
+  margin-bottom: 5vw;
+ }
+
+ .delivery-details table tr {
+  border-bottom: 1px solid #f43103;
+  padding: 0.5rem 0rem;
+ }
+
+ .delivery-details table .total-line{
+  border-bottom: 2px solid #f43103;
+ }
+
+ .delivery-details table tr td {
+  padding: 0.5rem 0rem;
+ }
+
+ .delivery-details table .table-bottom {
+  border-bottom: none;
+  font-weight: 700;
+
+ }
+
+ .delivery-details table tr .price {
+  text-align: right;
+ }
+
+ .delivery-details table tr .number{
+  padding: 15px;
+ }
+
+ .delivery-details .form{
+    color:#f43103;
+    width: 49%;
+    
+  }
+
+ .form input { 
+    width: 98%;
+    border: 1px solid #f43103;
+    height: 3vw;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+  }
+
+  .form button{
+    background-color: #f43103;
+    color: #f5f4f4;
+    padding: 7px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 2vw;
+    width: 15vw;
+    margin-bottom: 20px;
+    
+  }
+
+
+  /***************  Thank you Page ****************/
+ 
+  button.home-btn{
+    background-color: #f43103;
+    color: #f5f4f4;
+    padding: 12px 13px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    width: 10rem;
+    margin: 4rem;
+ }
+
+ body .thanks-text{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  color:#f43103;
+  font-weight: 100;
+
+ }
+
+ body .thanks-text h6{
+  margin-bottom: 0;
+  margin-top: 5px;
+  font-size: 3vw;
+  font-weight: 250;
+  font-family:'League Spartan', sans-serif;
+ }
+
+.menu.delivery.thanks{
+  margin: 7px 0;
+  width: 100%;
+}
+ /* @media only screen and (max-width:600px) {
+  .menu h2 {
+    text-align: center;
+    font-size: 1em;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+ } */
